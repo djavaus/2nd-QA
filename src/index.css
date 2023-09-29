@@ -1,13 +1,282 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Heebo, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+
+}
+
+.header__link {
+  margin-left: 15px;
+  font-family: Heebo, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+
+
+}
+
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.main__content {
+ 
+  max-width: 40%;
+}
+
+.main__title {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  
+}
+
+.main__desc {
+  
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.main__btn {
+  background: #FF6464;
+  width: 210px;
+  height: 50px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__img {
+  width: 40px;
+  margin-right: 20px;
+  
+}
+
+.footer__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recent__comment__head-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.recent__comments__title {
+  font-size: 32px;
+}
+
+.recent__comment__btn {
+  font-size: 32px;
+  color: blue;
+}
+
+.recent__comments__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.recent__comment {
+  width: 47%;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.recent__comment-name {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.recent__comment-desc {
+  text-transform: capitalize;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination__img {
+  width: 50px;
+  height: 50px;
+}
+
+.pagination__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pagination__link {
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.works__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work__card {
+  width: 47%;
+}
+
+.works__title {
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.work__select {
+  width: 100px;
+  background: pink;
+  border: none;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.blog__post {
+  width: 100%;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  border: 1px solid pink
+}
+
+.blog__title {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.blog__desc {
+  border: 0.5px solid black;
+  text-transform: capitalize;
+  font-size: 16px;
+  padding: 5px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .main__content {
+    padding: 0;
+  }
+
+  .main__img {
+    width: 40%;
+    
+   
+  }
+
+  .main__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+  }
+
+  .main__desc {
+    width: 100%;
+  }
+
+  .works__img {
+    width: 100%;
+  }
+  .works__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .works__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .container {
+    max-width: 450px;
+  }
+
+  .main__title {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .main__desc {
+    padding: 0;
+    font-size: 12px;
+  }
+
+
+  .main__img {
+    width: 40%;
+    
+   
+  }
+
+  .main__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+  }
+
+  .main__desc {
+    width: 100%;
+  }
+
+  .works__img {
+    width: 100%;
+  }
+  .works__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .works__title {
+    font-size: 16px;
+  }
 }
